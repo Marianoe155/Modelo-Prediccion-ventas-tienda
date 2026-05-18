@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>BigMart Sales Prediction</title>
+
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #0f172a;
+    color: #e2e8f0;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    text-align: center;
+  }
+
+  h1, h2 {
+    color: white;
+  }
+
+  p {
+    color: #cbd5e1;
+  }
+
+  .badges {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin: 20px 0;
+  }
+
+  .card {
+    background-color: #1e293b;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 20px 0;
+    text-align: center;
+  }
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: auto;
+    background-color: #1e293b;
+  }
+
+  th, td {
+    border: 1px solid #334155;
+    padding: 10px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #334155;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 6px 0;
+  }
+
+  /* 🔥 ESTA ES LA PARTE CLAVE QUE TE CENTRA EL ARBOL */
+  .tree-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  pre {
+    display: inline-block;
+    text-align: left;
+    background-color: #1e293b;
+    padding: 15px;
+    border-radius: 10px;
+    overflow-x: auto;
+    margin: 0 auto;
+  }
+
+  img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-top: 10px;
+  }
+
+  a {
+    color: #38bdf8;
+    text-decoration: none;
+  }
+
+</style>
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📊 BigMart Sales Prediction</h1>
+
+<div class="badges">
+  <img src="https://img.shields.io/badge/Python-3.10-blue">
+  <img src="https://img.shields.io/badge/XGBoost-Model-green">
+  <img src="https://img.shields.io/badge/Pandas-EDA-yellow">
+  <img src="https://img.shields.io/badge/Machine_Learning-Regression-orange">
+</div>
+
+<p>
+Modelo de Machine Learning para predecir ventas en tiendas BigMart.
+</p>
+
+---
+
+<div class="card">
+<h2>📌 Métricas</h2>
+
+<table>
+<tr><th>Métrica</th><th>Valor</th></tr>
+<tr><td>Modelo</td><td>XGBoost</td></tr>
+<tr><td>RMSE</td><td>~907</td></tr>
+<tr><td>R² CV</td><td>0.594</td></tr>
+<tr><td>R² train</td><td>0.583</td></tr>
+</table>
+</div>
+
+<div class="card">
+<h2>📁 Estructura del proyecto</h2>
+
+<div class="tree-container">
+<pre>
+PREDICCION_VENTAS_TIENDA/
+├── data/
+│   ├── Train_BigMart.csv
+│   ├── Test_BigMart.csv
+│   ├── test_clean.csv
+│   ├── train_clean_sin_outl.csv
+│   └── train_clean.csv
+├── entregables/
+│   ├── README.html
+│   └── test_predicciones.csv
+├── imagenes/
+├── modelo/
+│   └── TEST.ipynb
+├── notebooks/
+│   ├── EDA.ipynb
+│   └── MODELADO.ipynb
+└── requirements.txt
+</pre>
+</div>
+
+</div>
+
+<div class="card">
+<h2>📈 Visualizaciones</h2>
+
+<img src="../imagenes/top_feature.png">
+<img src="../imagenes/linea_modelo.png">
+
+</div>
+
+<div class="card">
+<h2>🧠 Insights</h2>
+
+<ul>
+<li>Outlet_Type es el factor más importante</li>
+<li>La antigüedad impacta positivamente</li>
+<li>La visibilidad no es determinante</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>🚀 Próximos pasos</h2>
+
+<ul>
+<li>Demografía de tiendas</li>
+<li>Feriados y estacionalidad</li>
+<li>Optimización de hiperparámetros</li>
+</ul>
+
+</div>
+
+<div class="card">
+<h2>👤 Autor</h2>
+
+<p>
+<strong>Mariano Baigorria</strong><br>
+<a href="https://www.linkedin.com/in/mariano-baigorria-b85004282/" target="_blank">
+LinkedIn
+</a>
+</p>
+
+</div>
+
+</div>
+
+</body>
+</html>

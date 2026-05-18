@@ -1,0 +1,8 @@
+venv/
+env/
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.DS_Store
+../data/Test_BigMart.csv
