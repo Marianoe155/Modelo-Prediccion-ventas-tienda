@@ -115,11 +115,11 @@ PREDICCION_VENTAS_TIENDA/
 
 ### Importancia de variables
 
-![Feature Importance](../imagenes/top_feature.png)
+![Feature Importance](/imagenes/top_feature.png)
 
 ### Ajuste del modelo
 
-![Model Performance](../imagenes/linea_modelo.png)
+![Model Performance](/imagenes/linea_modelo.png)
 
 ---
 
